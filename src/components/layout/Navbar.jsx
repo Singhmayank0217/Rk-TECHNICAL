@@ -114,13 +114,6 @@ export default function Navbar() {
                     >
                       Completed Projects
                     </Link>
-                    <Link
-                      to="/portfolio/new"
-                      className="block px-4 py-2 font-semibold text-base font-tinos text-gray-700 hover:bg-red-50 hover:text-red-500 transition-colors duration-300"
-                      onClick={() => setIsPortfolioOpen(false)}
-                    >
-                      New Projects
-                    </Link>
                   </div>
                 )}
               </div>
@@ -213,16 +206,6 @@ export default function Navbar() {
                       }}
                     >
                       Completed Projects
-                    </Link>
-                    <Link
-                      to="/portfolio/new"
-                      className="text-gray-600 hover:text-red-500 text-sm font-semibold font-tinos transition-colors duration-300"
-                      onClick={() => {
-                        setIsOpen(false);
-                        setIsPortfolioOpen(false);
-                      }}
-                    >
-                      New Projects
                     </Link>
                   </div>
                 )}

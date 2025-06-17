@@ -1,6 +1,5 @@
-import { Card, CardContent } from "../../components/ui/Card"
-import { Calendar, MapPin, Users, Building, CheckCircle } from "lucide-react"
 import BackgroundCarousel from "../../components/ui/BackgroundCarousel"
+import CompanyCard from "../../components/ui/CompanyCard"
 
 export default function CompletedProjects() {
   const completedImages = [
@@ -11,114 +10,127 @@ export default function CompletedProjects() {
     "/placeholder.svg?height=600&width=1200&text=Educational+Infrastructure",
   ]
 
-  const completedProjects = [
+  const completedCompanies = [
     {
-      title: "Tech Corporate Tower Security System",
-      category: "CCTV & Access Control",
-      location: "Bandra-Kurla Complex, Mumbai",
-      date: "December 2024",
-      client: "TechnoSoft Solutions Pvt Ltd",
-      duration: "6 weeks",
-      image: "/placeholder.svg?height=300&width=400",
+      id: 1,
+      name: "POLIXEL INDIA",
+      image: "/images/polixel-card.png",
+      description:
+        "This was one of our First Project in Kolkata here we worked over here as an Installation of CCTV Cameras, FIRE, Safety, and Security Systems",
+      projects: ["Unitech BUILDING in the Year - 2012", "Coal India NS ROAD - 2015"],
+      additionalInfo: [
+        { label: "Project Status", value: "Successfully Completed" },
+        { label: "Location", value: "Kolkata, West Bengal" },
+        { label: "Duration", value: "2012 - 2015" },
+        { label: "Services", value: "CCTV, Fire Safety, Security Systems" },
+        { label: "Project Value", value: "₹8,50,000" },
+        { label: "Client Satisfaction", value: "100%" },
+      ],
+    },
+    {
+      id: 2,
+      name: "TECH CORPORATE TOWER",
+      image: "/placeholder.svg?height=200&width=300&text=Tech+Corporate",
       description:
         "Complete security overhaul for a 15-story corporate building housing 2000+ employees. Installed 80+ HD cameras, biometric access control systems, fire safety integration, and centralized monitoring station.",
-      features: [
-        "80+ HD Cameras",
-        "Biometric Access Control",
-        "Fire Safety Integration",
-        "24/7 Monitoring Center",
-        "Mobile App Control",
+      projects: [
+        "80+ HD Camera Installation - December 2024",
+        "Biometric Access Control System - December 2024",
+        "Fire Safety Integration - December 2024",
+        "24/7 Monitoring Center Setup - December 2024",
       ],
-      budget: "₹8,50,000",
+      additionalInfo: [
+        { label: "Project Status", value: "Successfully Completed" },
+        { label: "Location", value: "Bandra-Kurla Complex, Mumbai" },
+        { label: "Duration", value: "6 weeks" },
+        { label: "Client", value: "TechnoSoft Solutions Pvt Ltd" },
+        { label: "Project Value", value: "₹8,50,000" },
+        { label: "Completion Date", value: "December 2024" },
+      ],
     },
     {
-      title: "Green Valley Residential Complex",
-      category: "Fire Safety & Security",
-      location: "Wakad, Pune",
-      date: "November 2024",
-      client: "Green Valley Apartment Association",
-      duration: "8 weeks",
-      image: "/placeholder.svg?height=300&width=400",
+      id: 3,
+      name: "GREEN VALLEY RESIDENTIAL",
+      image: "/placeholder.svg?height=200&width=300&text=Green+Valley",
       description:
         "Comprehensive safety and security system for a premium 300-unit residential complex. Implemented fire detection, sprinkler systems, CCTV surveillance, and access control for all entry points.",
-      features: [
-        "300+ Smoke Detectors",
-        "Sprinkler Systems",
-        "50+ CCTV Cameras",
-        "Vehicle Access Control",
-        "Emergency Lighting",
+      projects: [
+        "300+ Smoke Detectors Installation - November 2024",
+        "Sprinkler Systems Setup - November 2024",
+        "50+ CCTV Cameras Network - November 2024",
+        "Vehicle Access Control - November 2024",
       ],
-      budget: "₹12,75,000",
+      additionalInfo: [
+        { label: "Project Status", value: "Successfully Completed" },
+        { label: "Location", value: "Wakad, Pune" },
+        { label: "Duration", value: "8 weeks" },
+        { label: "Client", value: "Green Valley Apartment Association" },
+        { label: "Project Value", value: "₹12,75,000" },
+        { label: "Completion Date", value: "November 2024" },
+      ],
     },
     {
-      title: "Industrial Manufacturing Security",
-      category: "Complete Security Solution",
-      location: "Aurangabad Industrial Area",
-      date: "October 2024",
-      client: "Precision Manufacturing Co.",
-      duration: "10 weeks",
-      image: "/placeholder.svg?height=300&width=400",
+      id: 4,
+      name: "PRECISION MANUFACTURING",
+      image: "/placeholder.svg?height=200&width=300&text=Manufacturing",
       description:
         "End-to-end security solution for a 50-acre manufacturing facility. Installed perimeter security, 120+ cameras, vehicle tracking, employee access control, and integrated alarm systems.",
-      features: [
-        "Perimeter Security",
-        "120+ Cameras",
-        "Vehicle Tracking",
-        "Employee Access Control",
-        "Integrated Alarms",
+      projects: [
+        "Perimeter Security Installation - October 2024",
+        "120+ Camera Network Setup - October 2024",
+        "Vehicle Tracking System - October 2024",
+        "Employee Access Control - October 2024",
       ],
-      budget: "₹15,25,000",
+      additionalInfo: [
+        { label: "Project Status", value: "Successfully Completed" },
+        { label: "Location", value: "Aurangabad Industrial Area" },
+        { label: "Duration", value: "10 weeks" },
+        { label: "Client", value: "Precision Manufacturing Co." },
+        { label: "Project Value", value: "₹15,25,000" },
+        { label: "Completion Date", value: "October 2024" },
+      ],
     },
     {
-      title: "Modern Education Campus Network",
-      category: "Network & Communication",
-      location: "Hadapsar, Pune",
-      date: "September 2024",
-      client: "International Education Institute",
-      duration: "12 weeks",
-      image: "/placeholder.svg?height=300&width=400",
+      id: 5,
+      name: "INTERNATIONAL EDUCATION",
+      image: "/placeholder.svg?height=200&width=300&text=Education",
       description:
         "Complete digital infrastructure for a modern educational campus serving 8000+ students. Implemented high-speed network, WiFi coverage, digital classrooms, and communication systems.",
-      features: ["Campus-wide WiFi", "Fiber Optic Network", "100+ Access Points", "Digital Classrooms", "PA Systems"],
-      budget: "₹18,50,000",
+      projects: [
+        "Campus-wide WiFi Network - September 2024",
+        "Fiber Optic Infrastructure - September 2024",
+        "100+ Access Points Installation - September 2024",
+        "Digital Classroom Setup - September 2024",
+      ],
+      additionalInfo: [
+        { label: "Project Status", value: "Successfully Completed" },
+        { label: "Location", value: "Hadapsar, Pune" },
+        { label: "Duration", value: "12 weeks" },
+        { label: "Client", value: "International Education Institute" },
+        { label: "Project Value", value: "₹18,50,000" },
+        { label: "Completion Date", value: "September 2024" },
+      ],
     },
     {
-      title: "Multi-Specialty Hospital Security",
-      category: "Healthcare Solutions",
-      location: "Shivajinagar, Pune",
-      date: "August 2024",
-      client: "City Care Multi-Specialty Hospital",
-      duration: "6 weeks",
-      image: "/placeholder.svg?height=300&width=400",
+      id: 6,
+      name: "CITY CARE HOSPITAL",
+      image: "/placeholder.svg?height=200&width=300&text=Hospital",
       description:
         "Specialized security and safety systems for a 200-bed hospital. Implemented patient monitoring, emergency response, access control for restricted areas, and fire safety compliance systems.",
-      features: [
-        "Patient Area Monitoring",
-        "Emergency Alarms",
-        "Restricted Access Control",
-        "Fire Safety Compliance",
-        "Nurse Call Systems",
+      projects: [
+        "Patient Area Monitoring - August 2024",
+        "Emergency Response Systems - August 2024",
+        "Restricted Access Control - August 2024",
+        "Fire Safety Compliance - August 2024",
       ],
-      budget: "₹9,75,000",
-    },
-    {
-      title: "Shopping Mall Security Network",
-      category: "Retail Security",
-      location: "Phoenix MarketCity, Mumbai",
-      date: "July 2024",
-      client: "Premium Retail Management",
-      duration: "4 weeks",
-      image: "/placeholder.svg?height=300&width=400",
-      description:
-        "Comprehensive security system for a 5-floor shopping mall with 200+ retail outlets. Installed surveillance network, theft prevention, crowd monitoring, and emergency response systems.",
-      features: [
-        "Multi-floor Monitoring",
-        "Theft Prevention",
-        "Crowd Analytics",
-        "Emergency Response",
-        "POS Integration",
+      additionalInfo: [
+        { label: "Project Status", value: "Successfully Completed" },
+        { label: "Location", value: "Shivajinagar, Pune" },
+        { label: "Duration", value: "6 weeks" },
+        { label: "Client", value: "City Care Multi-Specialty Hospital" },
+        { label: "Project Value", value: "₹9,75,000" },
+        { label: "Completion Date", value: "August 2024" },
       ],
-      budget: "₹11,20,000",
     },
   ]
 
@@ -168,79 +180,16 @@ export default function CompletedProjects() {
       {/* Projects Grid */}
       <section className="py-20 bg-gray-50">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {completedProjects.map((project, index) => (
-              <Card
-                key={index}
-                className="overflow-hidden hover:shadow-xl transition-shadow duration-300 animate-fade-in-up"
-              >
-                <div className="relative">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      Completed
-                    </span>
-                  </div>
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {project.category}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <div className="mb-4">
-                    <h3 className="text-xl font-semibold text-gray-900 mt-1 mb-2">{project.title}</h3>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
-                  </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-fade-in-up">Our Success Stories</h2>
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto animate-fade-in-up">
+              Click on any company card to view detailed project information and implementation details.
+            </p>
+          </div>
 
-                  <div className="grid grid-cols-2 gap-4 mb-4 text-sm text-gray-600">
-                    <div className="flex items-center">
-                      <Building className="w-4 h-4 mr-2 text-red-500" />
-                      <span className="font-medium">{project.client}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <MapPin className="w-4 h-4 mr-2 text-red-500" />
-                      <span>{project.location}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Calendar className="w-4 h-4 mr-2 text-red-500" />
-                      <span>{project.date}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Users className="w-4 h-4 mr-2 text-red-500" />
-                      <span>{project.duration}</span>
-                    </div>
-                  </div>
-
-                  <div className="border-t pt-4 mb-4">
-                    <h4 className="font-medium text-gray-900 mb-2">Key Features:</h4>
-                    <div className="grid grid-cols-1 gap-1">
-                      {project.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                          {feature}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="border-t pt-4 flex justify-between items-center">
-                    <div>
-                      <span className="text-sm text-gray-500">Project Value:</span>
-                      <div className="text-lg font-bold text-red-500">{project.budget}</div>
-                    </div>
-                    <div className="text-right">
-                      <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                        Successfully Delivered
-                      </span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {completedCompanies.map((company) => (
+              <CompanyCard key={company.id} company={company} />
             ))}
           </div>
         </div>

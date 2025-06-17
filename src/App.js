@@ -7,7 +7,6 @@ import Services from "./pages/Services"
 import Contact from "./pages/Contact"
 import CompletedProjects from "./pages/portfolio/CompletedProjects"
 import OngoingProjects from "./pages/portfolio/OngoingProjects"
-import NewProjects from "./pages/portfolio/NewProjects"
 import "./App.css"
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio/completed" element={<CompletedProjects />} />
           <Route path="/portfolio/ongoing" element={<OngoingProjects />} />
-          <Route path="/portfolio/new" element={<NewProjects />} />
         </Routes>
         <Footer />
       </div>

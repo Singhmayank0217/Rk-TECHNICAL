@@ -140,7 +140,7 @@ export default function CompanyCard({ company }) {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold font-newsreader text-gray-900 mb-4 flex items-center">
                 <div className="w-2 h-2 bg-green-500 rounded-full mr-3 -mt-1"></div>
-                Project Milestones
+                Project
               </h4>
               {company.projects.map((project, index) => (
                 <div

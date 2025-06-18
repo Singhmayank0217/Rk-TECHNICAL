@@ -74,9 +74,9 @@ export default function About() {
                   const Icon = stat.icon
                   return (
                     <div key={index} className="text-center">
-                      <Icon className="w-8 h-8 text-red-500 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-gray-900">{stat.number}</div>
-                      <div className="text-sm text-gray-600">{stat.label}</div>
+                      <Icon className="w-8 h-8 text-red-600 mx-auto mb-2" />
+                      <div className="text-2xl font-bold font-tinos text-gray-900">{stat.number}</div>
+                      <div className="text-sm font-newsreader text-slate-700">{stat.label}</div>
                     </div>
                   )
                 })}
@@ -93,8 +93,8 @@ export default function About() {
                     className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300"
                   >
                     <Icon className="w-10 h-10 text-red-500 mx-auto mb-3" />
-                    <div className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
-                    <div className="text-gray-600">{stat.label}</div>
+                    <div className="text-3xl font-tinos font-bold text-gray-900 mb-1">{stat.number}</div>
+                    <div className="text-slate-700 font-newsreader">{stat.label}</div>
                   </div>
                 )
               })}

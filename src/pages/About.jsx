@@ -1,5 +1,6 @@
 import { Target, Eye, Heart } from "lucide-react"
 import BackgroundCarousel from "../components/ui/BackgroundCarousel"
+import about from "../assests/team-1.jpeg"
 
 export default function About() {
   const aboutImages = [
@@ -69,8 +70,8 @@ export default function About() {
         overlay="bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-red-500/90"
       >
         <div className="container text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">About RK Technical Support</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-up">
+          <h1 className="text-4xl md:text-6xl font-bold font-tinos mb-6 animate-fade-in-up">About RK Technical Support</h1>
+          <p className="text-xl md:text-2xl font-newsreader max-w-3xl mx-auto animate-fade-in-up">
             14+ years of excellence in providing professional safety and security solutions
           </p>
         </div>
@@ -82,27 +83,27 @@ export default function About() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
-              <p className="text-gray-600 text-lg mb-6">
+              <h2 className="text-4xl font-bold font-tinos text-gray-900 mb-6">Our Story</h2>
+              <p className="text-slate-700 font-newsreader text-justify text-lg mb-6">
                 Founded in 2010, RK Technical Support began as a small team of passionate engineers with a vision to
-                revolutionize the safety and security industry. What started as a local service provider has grown into
+                revolutionize the <span className="text-red-600">safety and security industry</span>. What started as a local service provider has grown into
                 a trusted name across the region.
               </p>
-              <p className="text-gray-600 text-lg mb-6">
+              <p className="text-slate-700 font-newsreader text-justify text-lg mb-6">
                 Over the years, we have successfully completed over 1000 projects, ranging from small residential
                 installations to large-scale industrial security systems. Our commitment to quality and customer
                 satisfaction has been the driving force behind our growth.
               </p>
-              <p className="text-gray-600 text-lg">
-                Today, we continue to innovate and adapt to the latest technologies, ensuring our clients receive the
+              <p className="text-slate-700 font-newsreader text-justify text-lg">
+                Today, we continue to <span className="text-red-600">innovate and adapt to the latest technologies</span> , ensuring our clients receive the
                 most advanced and reliable solutions available in the market.
               </p>
             </div>
             <div className="animate-fade-in-up">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src={about}
                 alt="RK Technical Support Journey"
-                className="rounded-lg shadow-xl w-full"
+                className="rounded-lg sm:ml-36 shadow-xl sm:w-[60%] sm:h-[50%] w-full"
               />
             </div>
           </div>
@@ -113,8 +114,8 @@ export default function About() {
       <section className="py-20 bg-gray-50">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-fade-in-up">Our Foundation</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto animate-fade-in-up">
+            <h2 className="text-4xl font-bold font-serif text-gray-900 mb-3 animate-fade-in-up">Our Foundation</h2>
+            <p className="text-slate-700 font-newsreader text-xl max-w-3xl mx-auto animate-fade-in-up">
               Built on strong principles and guided by clear objectives
             </p>
           </div>
@@ -127,11 +128,11 @@ export default function About() {
                   key={index}
                   className="bg-white rounded-lg p-8 shadow-lg text-center hover:shadow-xl transition-shadow duration-300 animate-fade-in-up"
                 >
-                  <div className="bg-red-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                  <div className="bg-red-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
+                  <h3 className="text-2xl font-semibold font-tinos text-gray-900 mb-3">{value.title}</h3>
+                  <p className="text-slate-700 font-newsreader">{value.description}</p>
                 </div>
               )
             })}
@@ -140,7 +141,7 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-fade-in-up">Meet Our Team</h2>
@@ -164,7 +165,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }

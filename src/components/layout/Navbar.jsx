@@ -1,30 +1,39 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import {
-  Menu,
-  X,
-  ChevronUp,
-  ChevronDown ,
-  Phone,
-  Facebook,
-  Linkedin,
-  Instagram,
-} from "lucide-react";
+import { useState, useEffect } from "react"
+import { Link, useLocation } from "react-router-dom"
+import { Menu, X, ChevronUp, ChevronDown, Phone, Facebook, Linkedin, Instagram, Download } from "lucide-react"
+import logo from "../../assests/logo.jpg"
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
-  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false)
+  const [isPortfolioOpen, setIsPortfolioOpen] = useState(false)
+  const [logoVisible, setLogoVisible] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLogoVisible(true)
+    }, 500)
+    return () => clearTimeout(timer)
+  }, [])
 
   const isActive = (path) => {
-    return location.pathname === path;
-  };
+    return location.pathname === path
+  }
 
   const isPortfolioActive = () => {
-    return location.pathname.startsWith("/portfolio");
-  };
+    return location.pathname.startsWith("/portfolio")
+  }
+
+  const handleDownloadPortfolio = () => {
+    const link = document.createElement("a")
+    link.href = "/portfolio.pdf"
+    link.download = "RK-Technical-Portfolio.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <>
@@ -39,9 +48,22 @@ export default function Navbar() {
               <Instagram className="sm:w-5 sm:h-5 h-4 w-4 hover:text-red-500 cursor-pointer transition-colors duration-300" />
             </div>
           </div>
-          <div className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded font-newsreader">
-            <Phone className="w-4 h-4" />
-            <span>Call Us: +91 9874020650</span>
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={handleDownloadPortfolio}
+              className="group flex items-center space-x-1 sm:space-x-2 bg-gradient-to-r from-red-500 via-red-700 to-red-800 hover:from-red-800 hover:to-red-500 px-2 sm:px-4 py-1 sm:py-2 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg animate-pulse"
+            >
+              <Download className="w-3 h-3 sm:w-4 sm:h-4 group-hover:animate-bounce" />
+              <span className="font-semibold font-tinos text-xs sm:text-sm hidden xs:inline">Download Portfolio</span>
+              <span className="font-semibold font-tinos text-xs sm:text-sm xs:hidden">Download Portfolio</span>
+            </button>
+
+            {/* Phone Number */}
+            <div className="flex items-center space-x-1 sm:space-x-2 bg-red-600 hover:bg-red-600 px-2 sm:px-4 py-1 sm:py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+              <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="font-semibold font-tinos text-xs sm:text-sm hidden sm:inline">+91 9874020650</span>
+              <span className="font-semibold font-serif text-xs sm:hidden">Call</span>
+            </div>
           </div>
         </div>
       </div>
@@ -54,12 +76,25 @@ export default function Navbar() {
             <div className="flex items-center">
               <Link
                 to="/"
-                className="bg-red-600 text-white px-7 py-3 transform -skew-x-12 hover:bg-red-800 transition-colors duration-300"
+                className="bg-red-600 text-white px-4 sm:px-7 py-2 sm:py-3 transform -skew-x-12 hover:bg-red-800 transition-colors duration-300"
               >
-                <span className="font-bold text-xl transform skew-x-12 block font-tinos">
+                <span className="font-bold text-sm sm:text-xl transform skew-x-12 block font-tinos">
                   R K TECHNICAL SUPPORT
                 </span>
               </Link>
+
+              {/* Animated Logo */}
+              <div
+                className={`ml-2 sm:ml-4 transition-all duration-1000 ease-out ${
+                  logoVisible ? "transform translate-x-0 opacity-100" : "transform -translate-x-full opacity-0"
+                }`}
+              >
+                <img
+                  src={logo}
+                  alt="RK Technical Support Logo"
+                  className="h-8 sm:h-12 md:h-14 w-auto object-contain hover:scale-110 transition-transform duration-300"
+                />
+              </div>
             </div>
 
             {/* Desktop Menu */}
@@ -67,9 +102,7 @@ export default function Navbar() {
               <Link
                 to="/"
                 className={`font-semibold text-xl font-tinos transition-colors duration-300 ${
-                  isActive("/")
-                    ? "text-red-600"
-                    : "text-gray-700 hover:text-red-800"
+                  isActive("/") ? "text-red-600" : "text-gray-700 hover:text-red-800"
                 }`}
               >
                 Home
@@ -77,9 +110,7 @@ export default function Navbar() {
               <Link
                 to="/about"
                 className={`font-semibold text-xl font-tinos transition-colors duration-300 ${
-                  isActive("/about")
-                    ? "text-red-600"
-                    : "text-gray-700 hover:text-red-800"
+                  isActive("/about") ? "text-red-600" : "text-gray-700 hover:text-red-800"
                 }`}
               >
                 About
@@ -90,9 +121,7 @@ export default function Navbar() {
                 <button
                   onClick={() => setIsPortfolioOpen(!isPortfolioOpen)}
                   className={`flex items-center font-semibold text-xl font-tinos transition-colors duration-300 ${
-                    isPortfolioActive()
-                    ? "text-red-600"
-                    : "text-gray-700 hover:text-red-800"
+                    isPortfolioActive() ? "text-red-600" : "text-gray-700 hover:text-red-800"
                   }`}
                 >
                   Portfolio
@@ -121,9 +150,7 @@ export default function Navbar() {
               <Link
                 to="/services"
                 className={`font-semibold text-xl font-tinos transition-colors duration-300 ${
-                  isActive("/services")
-                    ? "text-red-600"
-                    : "text-gray-700 hover:text-red-800"
+                  isActive("/services") ? "text-red-600" : "text-gray-700 hover:text-red-800"
                 }`}
               >
                 Services
@@ -131,9 +158,7 @@ export default function Navbar() {
               <Link
                 to="/contact"
                 className={`font-semibold text-xl font-tinos transition-colors duration-300 ${
-                  isActive("/contact")
-                    ? "text-red-600"
-                    : "text-gray-700 hover:text-red-800"
+                  isActive("/contact") ? "text-red-600" : "text-gray-700 hover:text-red-800"
                 }`}
               >
                 Contact
@@ -141,15 +166,8 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden text-gray-700"
-            >
-              {isOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
+            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-gray-700">
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 
@@ -178,11 +196,7 @@ export default function Navbar() {
                   onClick={() => setIsPortfolioOpen(!isPortfolioOpen)}
                 >
                   <span>Portfolio</span>
-                  {isPortfolioOpen ? (
-                    <ChevronUp size={18} />
-                  ) : (
-                    <ChevronDown size={18} />
-                  )}
+                  {isPortfolioOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                 </button>
 
                 {isPortfolioOpen && (
@@ -191,8 +205,8 @@ export default function Navbar() {
                       to="/portfolio/ongoing"
                       className="text-gray-600 font-semibold  font-tinos hover:text-red-500 text-sm transition-colors duration-300"
                       onClick={() => {
-                        setIsOpen(false);
-                        setIsPortfolioOpen(false);
+                        setIsOpen(false)
+                        setIsPortfolioOpen(false)
                       }}
                     >
                       Ongoing Projects
@@ -201,8 +215,8 @@ export default function Navbar() {
                       to="/portfolio/completed"
                       className="text-gray-600 hover:text-red-500 font-semibold font-tinos text-sm transition-colors duration-300"
                       onClick={() => {
-                        setIsOpen(false);
-                        setIsPortfolioOpen(false);
+                        setIsOpen(false)
+                        setIsPortfolioOpen(false)
                       }}
                     >
                       Completed Projects
@@ -231,5 +245,5 @@ export default function Navbar() {
         </div>
       </nav>
     </>
-  );
+  )
 }

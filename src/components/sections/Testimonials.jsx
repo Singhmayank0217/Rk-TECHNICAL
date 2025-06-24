@@ -1,40 +1,43 @@
 import { AnimatedTestimonials } from "../ui/animated-testimonials";
+import mayank from "../../assests/Mayank.jpg";
+import rahul from "../../assests/Rahul.jpg";
+import aditya from "../../assests/Aditya.jpg";
 
 export function Testimonials() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Their CCTV installation was flawlessly executed—with crystal-clear imaging and perfectly positioned cameras that give us total peace of mind around the clock.",
+      name: "Mayank Singh",
+      designation: "Operations Manager at SecureWare Industries",
+      src: mayank,
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Our new fire‑fighting system was designed and fitted with such precision—completely compliant and seamlessly integrated into our facility. A true lifesaver!",
+      name: "Rahul",
+      designation: "Facility Head at Prime Manufacturing",
+      src: rahul,
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Implementing their access control solution was a game‑changer—biometrics at our entry points enabled secure, remote management and streamlined operations.",
+      name: "Aditya Sharma",
+      designation: "Security Lead at Metro Logistics",
+      src: aditya,
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
+        "The gas‑operation system they installed is robust and reliable. It’s finely tuned for our plant, and their team ensured every component runs flawlessly 24/7.",
+      name: "Abhishek Prajapati",
+      designation: "Process Engineer at GreenFuel Solutions",
       src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
+        "RK Techs’ networking setup transformed our connectivity—fast, secure, and scalable. They handled everything end to end with minimal downtime.",
+      name: "Shreya",
+      designation: "IT Infrastructure Manager at DataCore Systems",
       src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];

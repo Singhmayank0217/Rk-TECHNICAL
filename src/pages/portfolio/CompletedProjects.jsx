@@ -1,5 +1,10 @@
-import BackgroundCarousel from "../../components/ui/BackgroundCarousel"
-import CompanyCard from "../../components/ui/CompanyCard"
+import BackgroundCarousel from "../../components/ui/BackgroundCarousel";
+import CompanyCard from "../../components/ui/CompanyCard";
+import polixel from "../../assests/polixel.jpg";
+import sterling from "../../assests/Sterling.png";
+import honey from "../../assests/honeywell.png";
+import land from "../../assests/landt.jpg";
+import bnb from "../../assests/bnbsecurity.jpg";
 
 export default function CompletedProjects() {
   const completedImages = [
@@ -8,131 +13,124 @@ export default function CompletedProjects() {
     "/placeholder.svg?height=600&width=1200&text=Residential+Safety",
     "/placeholder.svg?height=600&width=1200&text=Industrial+Solutions",
     "/placeholder.svg?height=600&width=1200&text=Educational+Infrastructure",
-  ]
+  ];
 
   const completedCompanies = [
     {
       id: 1,
       name: "POLIXEL INDIA",
-      image: "/images/polixel-card.png",
+      image: polixel,
       description:
         "This was one of our First Project in Kolkata here we worked over here as an Installation of CCTV Cameras, FIRE, Safety, and Security Systems",
-      projects: ["Unitech BUILDING in the Year - 2012", "Coal India NS ROAD - 2015"],
+      projects: [
+        "Unitech BUILDING in the Year - 2012",
+        "Coal India NS ROAD - 2015",
+      ],
       additionalInfo: [
-        { label: "Project Status", value: "Successfully Completed" },
-        { label: "Location", value: "Kolkata, West Bengal" },
+        { label: "Project Type", value: "SECURITY SYSTEMS INSTALLATIONS" },
+        { label: "Location", value: " KOLKATA" },
         { label: "Duration", value: "2012 - 2015" },
-        { label: "Services", value: "CCTV, Fire Safety, Security Systems" },
-        { label: "Project Value", value: "₹8,50,000" },
+        {
+          label: "Services",
+          value: "CCTV Cameras, FIRE, Safety, and Security Systems.",
+        },
+        { label: "Project Value", value: "₹18,50,000" },
         { label: "Client Satisfaction", value: "100%" },
       ],
     },
     {
       id: 2,
-      name: "TECH CORPORATE TOWER",
-      image: "/placeholder.svg?height=200&width=300&text=Tech+Corporate",
-      description:
-        "Complete security overhaul for a 15-story corporate building housing 2000+ employees. Installed 80+ HD cameras, biometric access control systems, fire safety integration, and centralized monitoring station.",
+      name: "STERLING & WILSON PVT LTD",
+      image: sterling,
+      description: " We worked as FIRE ALARM, CCTV, ACCESS, BMS & BOOM BARRIER",
       projects: [
-        "80+ HD Camera Installation - December 2024",
-        "Biometric Access Control System - December 2024",
-        "Fire Safety Integration - December 2024",
-        "24/7 Monitoring Center Setup - December 2024",
+        "JINDAL STEEL - 2014 RAIGARH",
+        "NISER - 2015 PANAGARH",
+        "AIRFORCE STATION - 2015",
       ],
       additionalInfo: [
-        { label: "Project Status", value: "Successfully Completed" },
-        { label: "Location", value: "Bandra-Kurla Complex, Mumbai" },
-        { label: "Duration", value: "6 weeks" },
-        { label: "Client", value: "TechnoSoft Solutions Pvt Ltd" },
-        { label: "Project Value", value: "₹8,50,000" },
-        { label: "Completion Date", value: "December 2024" },
+        { label: "Project Type", value: "Safety Systems" },
+        { label: "Location", value: "RAIGARH, PANAGARH" },
+        { label: "Duration", value: "2014 - 2015" },
+        {
+          label: "Services",
+          value: "FIRE ALARM, CCTV, ACCESS, BMS & BOOM BARRIER.",
+        },
+        { label: "Project Value", value: "₹15,20,000" },
+        { label: "Client Satisfaction", value: "100%" },
       ],
     },
     {
       id: 3,
-      name: "GREEN VALLEY RESIDENTIAL",
-      image: "/placeholder.svg?height=200&width=300&text=Green+Valley",
+      name: "HoneyWell",
+      image: honey,
       description:
-        "Comprehensive safety and security system for a premium 300-unit residential complex. Implemented fire detection, sprinkler systems, CCTV surveillance, and access control for all entry points.",
+        "Honeywell KOLKATA Project has been the most challenging and learning Project for our Team, here we worked as a third-hand party for HONEYWELL, where we worked on the Installation of a FIRE ALARM SYSTEM & SYSTEM. ",
       projects: [
-        "300+ Smoke Detectors Installation - November 2024",
-        "Sprinkler Systems Setup - November 2024",
-        "50+ CCTV Cameras Network - November 2024",
-        "Vehicle Access Control - November 2024",
+        "NETAJI SUBASH CAHNDRA BOSE INTERNATIONAL AIRPORT - 2014",
+        "KOLKATA AIRPORT - WEST BENGAL",
       ],
       additionalInfo: [
-        { label: "Project Status", value: "Successfully Completed" },
-        { label: "Location", value: "Wakad, Pune" },
-        { label: "Duration", value: "8 weeks" },
-        { label: "Client", value: "Green Valley Apartment Association" },
-        { label: "Project Value", value: "₹12,75,000" },
-        { label: "Completion Date", value: "November 2024" },
+        { label: "Project Type", value: "FIRE ALARM SECURITY & SYSTEM." },
+        { label: "Location", value: "WEST BENGAL" },
+        { label: "Duration", value: "2014" },
+        {
+          label: "Services",
+          value: "Campus Security, Digital Infrastructure, Safety Systems",
+        },
+        { label: "Project Value", value: "₹25,30,000" },
+        { label: "Client Satisfaction", value: "100%" },
       ],
     },
     {
       id: 4,
-      name: "PRECISION MANUFACTURING",
-      image: "/placeholder.svg?height=200&width=300&text=Manufacturing",
+      name: "L&T Technology Services Ltd",
+      image: land,
       description:
-        "End-to-end security solution for a 50-acre manufacturing facility. Installed perimeter security, 120+ cameras, vehicle tracking, employee access control, and integrated alarm systems.",
+        "L & T TECHNOLOGY SERVICES LTD We have worked on Installation of FIRE ALAM, CCTC, ACESS CONTROL, BMS, DATA & VOICE, PA, Gas Systems. ",
       projects: [
-        "Perimeter Security Installation - October 2024",
-        "120+ Camera Network Setup - October 2024",
-        "Vehicle Tracking System - October 2024",
-        "Employee Access Control - October 2024",
+        "HOSPITAL PROJECT DUMKA HOSPITAL PROJECT JHARKHAND",
+        "IIT PATNA – 2022",
+        "IIT KANPUR - 2025 ",
       ],
       additionalInfo: [
-        { label: "Project Status", value: "Successfully Completed" },
-        { label: "Location", value: "Aurangabad Industrial Area" },
-        { label: "Duration", value: "10 weeks" },
-        { label: "Client", value: "Precision Manufacturing Co." },
-        { label: "Project Value", value: "₹15,25,000" },
-        { label: "Completion Date", value: "October 2024" },
+        { label: "Project Type", value: "FIRE SAFTEY SERVICES" },
+        { label: "Location", value: "JHARKHAND, PATNA, KANPUR" },
+        { label: "Duration", value: "DECEMBER 2021" },
+        { label: "Services", value: " Fire Safety" },
+        { label: "Project Value", value: "₹8,50,000" },
+        { label: "Client Satisfaction", value: "100%" },
       ],
     },
     {
       id: 5,
-      name: "INTERNATIONAL EDUCATION",
-      image: "/placeholder.svg?height=200&width=300&text=Education",
+      name: "BNB Security & Automation",
+      image: bnb,
       description:
-        "Complete digital infrastructure for a modern educational campus serving 8000+ students. Implemented high-speed network, WiFi coverage, digital classrooms, and communication systems.",
-      projects: [
-        "Campus-wide WiFi Network - September 2024",
-        "Fiber Optic Infrastructure - September 2024",
-        "100+ Access Points Installation - September 2024",
-        "Digital Classroom Setup - September 2024",
+        "We have been working for this company for as a CCTV, ACCESS CONTROL, FIRE ALAM, BMS, FIRE SUPPRESSION, FM 200 GAS SYSTEM, PA SYSTEMS.",
+       projects: [
+        "ITC SAKRAIL: ITC FOOD WAREHOUSE AT KOLKATA – SAKRAIL- 2023",
+        "ITC KHURDA: ITC FOOD & BEVERAGE FACTORY - 2019",
+        "ITC MUNGER: DAIRY PLANT AT MUNGER - 2020",
+        "ITC GUNTUR: ITC FOOD WAREHOUSE & BEVERAGE, HYDREBAD – GUNTUR - 2018",
+        "ITC AHEMDABAD: ITC FOOD & BEVERAGE AT GUJARAT – AHEMDABAD - 2023",
+        "ITC RAJMUNDRY: ITC WAREHOUSE AT RAJMUNDRY – HYDREBAD - 2018",
+        "CTS KOLKATA: IT SECTOR – NEW TOWN - WEST BENGAL",
+        "AMAZON KOLKATA: WAREHOUSE - AMAZON, ULBERIA - WEST BENGAL - 2021 ",
+        "AMAZON HYDREBAD - 2024 ",
+        "LEGATO: IT SECTOR - LEGATO – BANGLORE – 2019 ",
+        "ITC PACHLA: FOOD FACTORY - PACHLA - WEST BENGAL – 2024 ",
       ],
       additionalInfo: [
-        { label: "Project Status", value: "Successfully Completed" },
-        { label: "Location", value: "Hadapsar, Pune" },
-        { label: "Duration", value: "12 weeks" },
-        { label: "Client", value: "International Education Institute" },
+        { label: "Project Type", value: "SECURITY SYSTEMS INSTALLATIONS" },
+        { label: "Location", value: "KHURDA, MUNGER, GUNTUR, AHEMDABAD, RAJMUNDRY, KOLKATA, PACHLA," },
+        { label: "Duration", value: "2020 - 2024" },
+        { label: "Services", value: " CCTV, ACCESS CONTROL, FIRE ALAM, BMS, FIRE SUPPRESSION, FM 200 GAS SYSTEM, PA SYSTEMS." },
         { label: "Project Value", value: "₹18,50,000" },
-        { label: "Completion Date", value: "September 2024" },
+        { label: "Client Satisfaction", value: "100%" },
       ],
     },
-    {
-      id: 6,
-      name: "CITY CARE HOSPITAL",
-      image: "/placeholder.svg?height=200&width=300&text=Hospital",
-      description:
-        "Specialized security and safety systems for a 200-bed hospital. Implemented patient monitoring, emergency response, access control for restricted areas, and fire safety compliance systems.",
-      projects: [
-        "Patient Area Monitoring - August 2024",
-        "Emergency Response Systems - August 2024",
-        "Restricted Access Control - August 2024",
-        "Fire Safety Compliance - August 2024",
-      ],
-      additionalInfo: [
-        { label: "Project Status", value: "Successfully Completed" },
-        { label: "Location", value: "Shivajinagar, Pune" },
-        { label: "Duration", value: "6 weeks" },
-        { label: "Client", value: "City Care Multi-Specialty Hospital" },
-        { label: "Project Value", value: "₹9,75,000" },
-        { label: "Completion Date", value: "August 2024" },
-      ],
-    },
-  ]
+  ];
 
   return (
     <main>
@@ -146,9 +144,12 @@ export default function CompletedProjects() {
         overlay="bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-red-500/90"
       >
         <div className="container text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">Completed Projects</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-up">
-            Showcasing our successful implementations and satisfied clients across various industries
+          <h1 className="text-4xl md:text-6xl font-tinos font-bold mb-6 animate-fade-in-up">
+            Completed Projects
+          </h1>
+          <p className="text-xl md:text-2xl font-newsreader max-w-3xl mx-auto animate-fade-in-up">
+            Showcasing our successful implementations and satisfied clients
+            across various industries
           </p>
         </div>
       </BackgroundCarousel>
@@ -158,20 +159,20 @@ export default function CompletedProjects() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in-up">
-              <div className="text-3xl font-bold text-red-500 mb-2">1000+</div>
-              <div className="text-gray-600">Projects Completed</div>
+              <div className="text-3xl font-bold font-tinos text-red-500 mb-2">1000+</div>
+              <div className="text-slate-600 font-newsreader">Projects Completed</div>
             </div>
             <div className="animate-fade-in-up">
-              <div className="text-3xl font-bold text-red-500 mb-2">500+</div>
-              <div className="text-gray-600">Happy Clients</div>
+              <div className="text-3xl font-bold font-tinos text-red-500 mb-2">500+</div>
+              <div className="text-slate-600 font-newsreader">Happy Clients</div>
             </div>
             <div className="animate-fade-in-up">
-              <div className="text-3xl font-bold text-red-500 mb-2">14+</div>
-              <div className="text-gray-600">Years Experience</div>
+              <div className="text-3xl font-bold font-tinos text-red-500 mb-2">14+</div>
+              <div className="text-slate-600 font-newsreader">Years Experience</div>
             </div>
             <div className="animate-fade-in-up">
-              <div className="text-3xl font-bold text-red-500 mb-2">99%</div>
-              <div className="text-gray-600">Success Rate</div>
+              <div className="text-3xl font-bold font-tinos text-red-500 mb-2">99%</div>
+              <div className="text-slate-600 font-newsreader">Success Rate</div>
             </div>
           </div>
         </div>
@@ -181,9 +182,12 @@ export default function CompletedProjects() {
       <section className="py-20 bg-gray-50">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-fade-in-up">Our Success Stories</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto animate-fade-in-up">
-              Click on any company card to view detailed project information and implementation details.
+            <h2 className="text-4xl font-bold font-tinos text-gray-900 mb-6 animate-fade-in-up">
+              Our Success Stories
+            </h2>
+            <p className="text-slate-600 font-newsreader text-lg max-w-3xl mx-auto animate-fade-in-up">
+              Click on any company card to view detailed project information and
+              implementation details.
             </p>
           </div>
 
@@ -195,5 +199,5 @@ export default function CompletedProjects() {
         </div>
       </section>
     </main>
-  )
+  );
 }

@@ -14,113 +14,24 @@ export default function OngoingProjects() {
   const ongoingCompanies = [
     {
       id: 1,
-      name: "SMART CITY NASHIK",
-      image: "/placeholder.svg?height=200&width=300&text=Smart+City",
-      location: "Nashik, Maharashtra",
-      year: "Jan 2025 - Dec 2025",
-      value: "₹2.5Cr",
-      status: "In Progress",
-      progress: "25%",
+      name: "",
+      image: "",
+      location: "",
+      year: "",
+      value: "",
+      status: "",
+      progress: "",
       description:
-        "Massive smart city security infrastructure project covering 50+ locations across Nashik. Installing traffic monitoring, public area surveillance, emergency response systems, and integrated command center.",
+        "",
       projects: [
-        "Traffic Monitoring Systems - Phase 1 (Completed)",
-        "Public Area Surveillance - Phase 2 (In Progress)",
-        "Emergency Response Network - Phase 3 (Upcoming)",
-        "Integrated Command Center - Phase 4 (Planning)",
       ],
-      additionalInfo: [
-        { label: "Project Type", value: "Smart City Infrastructure" },
-        { label: "Client", value: "Nashik Municipal Corporation" },
-        { label: "Progress", value: "25% Complete" },
-        { label: "Expected Completion", value: "December 2025" },
-        { label: "Team Size", value: "45+ Engineers" },
-        { label: "Project Value", value: "₹2.5 Crores" },
-      ],
-    },
-    {
-      id: 2,
-      name: "MAHARASHTRA BANK",
-      image: "/placeholder.svg?height=200&width=300&text=Banking+Security",
-      location: "Multiple Branches, Maharashtra",
-      year: "Mar 2025 - Oct 2025",
-      value: "₹1.8Cr",
-      status: "Planning",
-      progress: "15%",
-      description:
-        "Security system upgrade for 25 bank branches across Maharashtra. Implementing advanced CCTV, access control, alarm systems, and centralized monitoring for enhanced financial security.",
-      projects: [
-        "Site Survey and Assessment - Phase 1 (Completed)",
-        "Security Design and Planning - Phase 2 (In Progress)",
-        "Equipment Procurement - Phase 3 (Upcoming)",
-        "Installation and Testing - Phase 4 (Scheduled)",
-      ],
-      additionalInfo: [
-        { label: "Project Type", value: "Banking Security Upgrade" },
-        { label: "Client", value: "Maharashtra State Cooperative Bank" },
-        { label: "Progress", value: "15% Complete" },
-        { label: "Expected Completion", value: "October 2025" },
-        { label: "Branches Covered", value: "25 Locations" },
-        { label: "Project Value", value: "₹1.8 Crores" },
-      ],
-    },
-    {
-      id: 3,
-      name: "PREMIUM HOTELS GROUP",
-      image: "/placeholder.svg?height=200&width=300&text=Hotel+Security",
-      location: "Goa & Mumbai",
-      year: "Feb 2025 - Jul 2025",
-      value: "₹95L",
-      status: "Installation",
-      progress: "35%",
-      description:
-        "Complete security solution for 3 luxury hotels in Goa and Mumbai. Installing guest safety systems, property security, access control, and integrated monitoring for premium hospitality experience.",
-      projects: [
-        "Hotel Mumbai - Security Installation (Completed)",
-        "Hotel Goa North - Access Control (In Progress)",
-        "Hotel Goa South - Guest Safety Systems (Upcoming)",
-        "Integration and Testing - All Properties (Scheduled)",
-      ],
-      additionalInfo: [
-        { label: "Project Type", value: "Hospitality Security" },
-        { label: "Client", value: "Premium Hospitality Group" },
-        { label: "Progress", value: "35% Complete" },
-        { label: "Expected Completion", value: "July 2025" },
-        { label: "Properties", value: "3 Luxury Hotels" },
-        { label: "Project Value", value: "₹95,00,000" },
-      ],
-    },
-    {
-      id: 4,
-      name: "SPPU UNIVERSITY",
-      image: "/placeholder.svg?height=200&width=300&text=University",
-      location: "Pune, Maharashtra",
-      year: "Apr 2025 - Jan 2026",
-      value: "₹3.2Cr",
-      status: "Initial Phase",
-      progress: "10%",
-      description:
-        "Digital transformation project for university campus serving 15,000 students. Implementing campus-wide network, digital classrooms, security systems, and smart campus management.",
-      projects: [
-        "Campus Network Planning - Phase 1 (In Progress)",
-        "Digital Infrastructure Setup - Phase 2 (Upcoming)",
-        "Security Systems Installation - Phase 3 (Scheduled)",
-        "Smart Campus Integration - Phase 4 (Planning)",
-      ],
-      additionalInfo: [
-        { label: "Project Type", value: "Educational Digital Infrastructure" },
-        { label: "Client", value: "Savitribai Phule Pune University" },
-        { label: "Progress", value: "10% Complete" },
-        { label: "Expected Completion", value: "January 2026" },
-        { label: "Students Served", value: "15,000+" },
-        { label: "Project Value", value: "₹3.2 Crores" },
-      ],
+      additionalInfo: [],
     },
   ]
 
   const stats = [
     { icon: TrendingUp, number: "4", label: "Active Projects", color: "text-blue-600" },
-    { icon: DollarSign, number: "₹8.45Cr", label: "Total Value", color: "text-green-600" },
+    // { icon: DollarSign, number: "₹8.45Cr", label: "Total Value", color: "text-green-600" },
     { icon: Users, number: "45+", label: "Team Members", color: "text-purple-600" },
     { icon: Clock, number: "21%", label: "Avg Progress", color: "text-orange-600" },
   ]
@@ -152,8 +63,8 @@ export default function OngoingProjects() {
         overlay="bg-gradient-to-r from-blue-900/90 via-purple-800/80 to-red-500/90"
       >
         <div className="container text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">Ongoing Projects</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in-up">
+          <h1 className="text-4xl md:text-6xl font-tinos font-bold mb-6 animate-fade-in-up">Ongoing Projects</h1>
+          <p className="text-xl md:text-2xl max-w-3xl font-newsreader mx-auto animate-fade-in-up">
             Current projects in progress showcasing our commitment to excellence and timely delivery
           </p>
         </div>
@@ -162,7 +73,7 @@ export default function OngoingProjects() {
       {/* Enhanced Stats Section */}
       <section className="py-16 bg-gradient-to-br from-white to-blue-50">
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {stats.map((stat, index) => {
               const Icon = stat.icon
               return (
@@ -173,8 +84,8 @@ export default function OngoingProjects() {
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Icon className={`w-6 h-6 ${stat.color}`} />
                   </div>
-                  <div className={`text-2xl font-bold ${stat.color} mb-1`}>{stat.number}</div>
-                  <div className="text-gray-600 text-sm">{stat.label}</div>
+                  <div className={`text-2xl font-tinos font-bold ${stat.color} mb-1`}>{stat.number}</div>
+                  <div className="text-slate-600 font-newsreader text-sm">{stat.label}</div>
                 </div>
               )
             })}
@@ -186,11 +97,11 @@ export default function OngoingProjects() {
       <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-purple-50">
         <div className="container">
           <div className="text-center mb-16">
-            <div className="inline-block bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block font-tinos bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
               PROJECTS IN PROGRESS
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-fade-in-up">Current Implementations</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto animate-fade-in-up">
+            <h2 className="text-4xl font-bold font-tinos text-gray-900 mb-6 animate-fade-in-up">Current Implementations</h2>
+            <p className="text-slate-600 font-newsreader text-lg max-w-3xl mx-auto animate-fade-in-up">
               Track our ongoing projects and see the progress of our current implementations. Click on any project card
               to view detailed progress information.
             </p>
@@ -220,8 +131,8 @@ export default function OngoingProjects() {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Project Timeline Overview</h2>
-            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-tinos font-bold mb-4">Project Timeline Overview</h2>
+            <p className="text-blue-100 font-newsreader text-lg max-w-2xl mx-auto">
               Our systematic approach ensures timely delivery and quality implementation across all ongoing projects.
             </p>
           </div>

@@ -113,18 +113,18 @@ export default function Contact() {
                   <MapPin className="w-10 h-10 text-white group-hover:bounce transition-transform duration-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-blue-600 mb-6 group-hover:text-blue-700 transition-colors duration-300">
-                  Office Address
+                  COMPANY ADDRESS 
                 </h3>
                 <div className="space-y-2 mb-6">
                   <p className="text-gray-700 font-semibold hover:text-green-500 transition-colors duration-300">
-                    Near Shani Madil, 2, Bhujang Dhar Rd
+                    2, Bhujangadhar Road, Patuapara
                   </p>
                   <p className="text-gray-600 hover:text-green-500 transition-colors duration-300">
-                    Liluah, Howrah, West Bengal
+                    Liluah, Howrah - 711204, West Bengal
                   </p>
                   <p className="text-gray-600 hover:text-green-500 transition-colors duration-300">711204</p>
                   <p className="text-gray-600 font-medium hover:text-green-500 transition-colors duration-300">
-                    +012 345 67890
+                    +91 9874020650
                   </p>
                 </div>
                 <Button
@@ -255,11 +255,11 @@ export default function Contact() {
             <Card className="text-center hover:shadow-lg transition-all duration-300 group animate-fade-in-up">
               <CardContent className="p-6">
                 <MapPin className="w-8 h-8 text-red-500 mx-auto mb-4 group-hover:bounce transition-transform duration-300" />
-                <h3 className="font-semibold text-gray-900 mb-2">Head Office</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">COMPANY ADDRESS </h3>
                 <p className="text-gray-600 text-sm">
-                  Near Shani Madil, Bhujang Dhar Rd
+                 2, Bhujangadhar Road, Patuapara
                   <br />
-                  Liluah, Howrah, West Bengal
+                  Liluah, Howrah - 711204, West Bengal
                 </p>
               </CardContent>
             </Card>

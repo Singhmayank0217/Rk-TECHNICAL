@@ -148,7 +148,15 @@ export default function Footer() {
               © {new Date().getFullYear()} RK Technical Support. All rights
               reserved.
             </p>
-            <div className="flex space-x-6 mt-2 md:mt-0">
+            <div className="flex space-x-6 mt-2 md:mt-0 items-center">
+              <a
+                href="https://mayanksinghrajput.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-200 text-sm font-tinos hover:text-red-600 transition-colors duration-300"
+              >
+                Designed by Mayank Singh
+              </a>
               <Link
                 to="/privacy"
                 className="text-slate-200 hover:text-red-600 text-sm transition-colors duration-300"

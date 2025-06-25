@@ -5,9 +5,9 @@ import service from "../../assests/vikashservicemain.jpeg"
 
 export default function About() {
   const stats = [
-    { icon: Users, number: "500+", label: "Happy Clients" },
+    { icon: Users, number: "85+", label: "Happy Clients" },
     { icon: Award, number: "14+", label: "Years Experience" },
-    { icon: CheckCircle, number: "1000+", label: "Projects Completed" },
+    { icon: CheckCircle, number: "100+", label: "Projects Completed" },
     { icon: Clock, number: "24/7", label: "Support Available" },
   ]
 

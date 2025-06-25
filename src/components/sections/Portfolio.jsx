@@ -16,7 +16,7 @@ export default function Portfolio() {
       image: land,
       location: "Kolkata, West Bengal",
       year: "2012 - 2015",
-      value: "₹8.5L",
+      value: "",
       status: "Completed",
       description:
         "Here we have worked on Installation of FIRE ALAM, CCTC, ACESS CONTROL, BMS, DATA & VOICE, PA",
@@ -38,7 +38,7 @@ export default function Portfolio() {
       image: sterling,
       location: "Pangarh, Raigarh",
       year: "2014 - 2015",
-      value: "₹15.2L",
+      value: "",
       status: "Completed",
       description:
         "Here we worked as FIRE ALARM, CCTV, ACCESS, BMS & BOOM BARRIER.",
@@ -62,7 +62,7 @@ export default function Portfolio() {
       image: bnb,
       location: "Kolkata, Ahemdabad,",
       year: "2020 - 2024",
-      value: "₹22.8L",
+      value: "",
       status: "Completed",
        description:
         "We have been working for this company for the last 4 years as a CCTV, ACCESS CONTROL, FIRE ALAM, BMS, FIRE SUPPRESSION, FM 200 GAS SYSTEM, PA SYSTEMS",
@@ -93,7 +93,7 @@ export default function Portfolio() {
       image: polixel,
       location: "Kolkata",
       year: "2012 - 2015",
-      value: "₹18.5L",
+      value: "",
       status: "Completed",
       description:
         "This was one of our First Project in Kolkata here we worked over here as an Installation of CCTV Cameras, FIRE, Safety, and Security Systems.",
@@ -116,7 +116,7 @@ export default function Portfolio() {
       image: honey,
       location: "West Bengal",
       year: "2014",
-      value: "₹25.3L",
+      value: "",
       status: "Completed",
       description:
         "Honeywell KOLKATA Project has been the most challenging and learning Project for our Team, here we worked as a third-hand party for HONEYWELL, where we worked on the Installation of a FIRE ALARM SYSTEM & SYSTEM.",
@@ -136,8 +136,8 @@ export default function Portfolio() {
   ]
 
   const stats = [
-    { icon: Building, number: "500+", label: "Projects Completed", color: "text-blue-600" },
-    { icon: Users, number: "200+", label: "Happy Clients", color: "text-green-600" },
+    { icon: Building, number: "85+", label: "Projects Completed", color: "text-blue-600" },
+    { icon: Users, number: "100+", label: "Happy Clients", color: "text-green-600" },
     { icon: Award, number: "14+", label: "Years Experience", color: "text-purple-600" },
     { icon: TrendingUp, number: "99%", label: "Success Rate", color: "text-red-600" },
   ]

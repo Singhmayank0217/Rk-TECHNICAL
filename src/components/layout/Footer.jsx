@@ -7,7 +7,6 @@ import {
   Linkedin,
   Instagram,
   Download,
-  ArrowRight,
 } from "lucide-react";
 
 export default function Footer() {
